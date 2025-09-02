@@ -14,7 +14,7 @@ public class Blog {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String title;
-    @Column(length = 50000)
+    @Column(columnDefinition = "TEXT")
     private String content;
     private String author;
     private String category;
